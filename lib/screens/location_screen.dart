@@ -18,7 +18,6 @@ class _LocationScreenState extends State<LocationScreen> {
   String city;
   int temperature;
   String conditionIcon;
-  String conditionMsg;
   String description;
   int humidity;
   int wind;
@@ -36,7 +35,6 @@ class _LocationScreenState extends State<LocationScreen> {
       if(weatherData == null){
         temperature = 0;
         conditionIcon ='Error';
-        conditionMsg = 'Unable to Fetch location';
         city = '';
         return;
       }
